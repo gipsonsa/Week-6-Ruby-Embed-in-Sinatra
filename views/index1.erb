@@ -1,0 +1,25 @@
+<h2>
+	Current Month and Year Holidays
+</h2>
+
+<ul>
+	<% @currentholidays.each do |day| %>
+		<p>
+			<%= day['name'] %>
+			<%= day['date'] %>
+		</p>
+	<% end %>
+</ul>
+
+<h2>
+	Month I was born and the Holidays in that month
+</h2>
+
+<ul>
+	<% @bdayholidays.each do |bday| %>
+		<p>
+			<%= bday['name'] %>
+			<%= bday['date'] %>
+		</p>
+	<% end %>
+</ul>
